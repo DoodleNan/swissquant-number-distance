@@ -1,0 +1,10 @@
+/target/
+/problem/original/
+/logging.log
+/.settings/
+/.logging.log
+/.project
+/.classpath
+/hs_err_*.log
+/logging.log.*
+/.idea/
