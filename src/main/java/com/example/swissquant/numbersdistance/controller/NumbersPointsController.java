@@ -34,7 +34,7 @@ public class NumbersPointsController {
 		long start = System.currentTimeMillis();
 		List<Point> resultList = numbersDistanceService.findClosestPointsTo(origin, numOfPoints);
 
-		long duration = System.currentTimeMillis() - start;
+		long duration = (System.currentTimeMillis() - start) / 1000;
 		log.info("Finding {} closest point to {} in {} s", numOfPoints, origin, duration);
 
 		return resultList;
@@ -54,7 +54,7 @@ public class NumbersPointsController {
 		long start = System.currentTimeMillis();
 		List<Point> resultList = numbersDistanceService.findFurthestPointsFrom(origin, numOfPoints);
 
-		long duration = System.currentTimeMillis() - start;
+		long duration = (System.currentTimeMillis() - start) / 1000;
 		log.info("Finding {} furthest point to {} in {} s \n", numOfPoints, origin, duration);
 
 		return resultList;
