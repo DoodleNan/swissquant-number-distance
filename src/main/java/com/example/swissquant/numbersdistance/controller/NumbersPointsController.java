@@ -53,6 +53,7 @@ public class NumbersPointsController {
 	public List<Point> findFurthestPointsFrom(@RequestBody Point origin, @PathParam("numOfPoints") int numOfPoints) {
 		long start = System.currentTimeMillis();
 		List<Point> resultList = numbersDistanceService.findFurthestPointsFrom(origin, numOfPoints);
+
 		long duration = System.currentTimeMillis() - start;
 		log.info("Finding {} furthest point to {} in {} s \n", numOfPoints, origin, duration);
 

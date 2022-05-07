@@ -233,7 +233,7 @@ You can find Code coverage report under {projectRoot}/target/site/jacoco folder.
 ## Improvement Ideas
 1. If the origin points and result set size doesn't change frequently, we can cache the results to a Map, key is
 origin and value is result set
-2. Some algorithm improvement ideas.
+2. Some algorithm improvement ideas: Space partitioning, Approximation methods. Ref: https://www.wikiwand.com/en/Nearest_neighbor_search
 3. Use multi-threads to read the input file and write to ConcurrentHashMap, as our
 ConcurrentHashMap is thread safe.
 4. Implement a nice UI.

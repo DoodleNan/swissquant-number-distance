@@ -34,11 +34,11 @@ public class FileInputFetcher implements InputFetcher {
                 pointConcurrentHashMap.put(new Point(x,y), System.currentTimeMillis());
             }
             long duration = (System.currentTimeMillis() - start) / 1000;
-            log.info("Set {} points within {} ms", pointConcurrentHashMap.size(), duration);
+            log.info("Set {} points within {} s", pointConcurrentHashMap.size(), duration);
         } catch (Exception e) {
             e.printStackTrace();
             log.error("Corrupt input file. Partial failure when parsing input points. num of points parsed: {}, total points in input: {}",
-                    pointConcurrentHashMap.size(), bytes.length);
+                    pointConcurrentHashMap.size(), bytes.length / 4);
         }finally {
             return pointConcurrentHashMap;
         }

@@ -20,8 +20,9 @@ public class Point{
 	private int y;
 
     /**
+     * Calculate distance to a given origin
 	 * @param point distance to the given point/origin
-     * @Return the distance from this Point to the given origin Point.
+     * @Return the square of distance from this Point to the given origin Point. We skip calculating root to save runtime.
      */
     public double distanceTo(Point point) {
         double dx = point.getX() - this.getX();
@@ -30,6 +31,9 @@ public class Point{
     }
 
     @Override
+    /**
+     * Override equals method to compare two points by their x,y coordinates, not reference. Used in unit test.
+     */
     public boolean equals(Object object) {
         if(object == this) return true;
         if(!(object instanceof Point)) return false;

@@ -31,8 +31,7 @@ public class BruteForceFurthestPointsFromCalculator implements FurthestPointsFro
             // Sort by distance to given origin, then x coordinate then y.
             @Override
             public int compare(Point point1, Point point2) {
-                int ret = 0;
-                ret = Double.compare(point1.distanceTo(origin), point2.distanceTo(origin));
+                int ret = Double.compare(point1.distanceTo(origin), point2.distanceTo(origin));
                 if(ret == 0) {
                     ret = Double.compare(point1.getX(), point2.getX());
                     if(ret == 0) {

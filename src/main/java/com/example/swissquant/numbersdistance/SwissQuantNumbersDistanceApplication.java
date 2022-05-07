@@ -5,14 +5,14 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 
 /**
- * SpringBoot main class. Just run this class with context menu: Run As -> Java Application to start the application.
+ * SpringBoot application entry point.
  *
  */
 @SpringBootApplication
 public class SwissQuantNumbersDistanceApplication {
 
 	/**
-	 * Main method of the application.
+	 * Main function of the application.
 	 * 
 	 * @param args
 	 */

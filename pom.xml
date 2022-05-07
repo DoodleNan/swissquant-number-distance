@@ -24,11 +24,11 @@
 				<version>1.16.18</version>
 				<scope>provided</scope>
 			</dependency>
-			<dependency>
-				<groupId>log4j</groupId>
-				<artifactId>log4j</artifactId>
-				<version>1.2.17</version>
-			</dependency>
+<!--			<dependency>-->
+<!--				<groupId>log4j</groupId>-->
+<!--				<artifactId>log4j</artifactId>-->
+<!--				<version>1.2.17</version>-->
+<!--			</dependency>-->
 			<dependency>
 				<groupId>commons-io</groupId>
 				<artifactId>commons-io</artifactId>
@@ -57,10 +57,10 @@
 			<groupId>org.projectlombok</groupId>
 			<artifactId>lombok</artifactId>
 		</dependency>
-		<dependency>
-			<groupId>log4j</groupId>
-			<artifactId>log4j</artifactId>
-		</dependency>
+<!--		<dependency>-->
+<!--			<groupId>log4j</groupId>-->
+<!--			<artifactId>log4j</artifactId>-->
+<!--		</dependency>-->
 		<dependency>
 			<groupId>commons-io</groupId>
 			<artifactId>commons-io</artifactId>
@@ -199,6 +199,8 @@
 				<configuration>
 					<excludes>
 						<exclude>com/example/**/SwissQuantNumbersDistanceApplication.class</exclude>
+						<exclude>com/example/**/CalculatorFactory.class</exclude>
+						<exclude>com/example/**/InputFetcherFactory.class</exclude>
 					</excludes>
 				</configuration>
 				<executions>
